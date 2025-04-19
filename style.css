@@ -18,6 +18,10 @@ nav a {
     text-decoration: none;
 }
 
+.menu {
+    display: none;
+}
+
 nav {
     height: 70px;
     z-index: 100;
@@ -61,4 +65,20 @@ nav ul a {
     width: 100vw;
     background: url(images/bg.png) no-repeat;
     background-size: cover;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    nav h1 {
+        font-size: 1.8em;
+    }
+
+    .menu {
+        display: block;
+    }
 }
