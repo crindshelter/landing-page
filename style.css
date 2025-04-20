@@ -73,7 +73,7 @@ nav ul a {
 /* HERO SECTION STYLE */
 
 .hero {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     width: 100vw;
     background: url(images/bg.png) no-repeat;
     background-size: cover;
@@ -103,6 +103,15 @@ nav ul a {
     flex: 2;
     max-width: 100%;
 
+}
+
+.hero button {
+    margin-top: 50px;
+    padding: 15px;
+    border: 5px solid var(--main-color);
+    background-color: #d1d1d190;
+    font-weight: bold;
+    font-size: 1.5em; 
 }
 
 .hero .box h1 {
