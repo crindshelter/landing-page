@@ -70,6 +70,11 @@ nav ul {
 nav ul a {
     color: var(--white-color);
     font-size: 1.5em;
+    transition: all 0.3s;
+}
+
+nav ul a:hover {
+    color: var(--secondary-color)
 }
 
 /* HERO SECTION STYLE */
