@@ -46,6 +46,8 @@ nav {
     background-image: linear-gradient(to right, var(--main-color));
     padding: 0 25px;
     box-shadow: 0 3px var(--secondary-color);
+    z-index: 5;
+    top: 0;
 }
 
 nav * {
