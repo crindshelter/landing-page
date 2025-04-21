@@ -4,7 +4,8 @@
     --main-color: #160745;
     --secondary-color: #4260f9;
     --white-color: #d1d1d1;
-    --yellow-color: rgb(181, 162, 58);
+    --yellow-color: #b5a23a;
+    --green-color: #003323;
 }
 
 * {
@@ -123,6 +124,8 @@ nav ul a {
 
 .hero button:hover {
     transform: translateY(-10px);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .hero .box h1 {
@@ -132,7 +135,59 @@ nav ul a {
 /* INFO SECTION */
 
 .info {
-    min-height: 100vh;
+    min-height: 35vh;
+    background-color: var(--green-color);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+
+}
+
+.info > h1 {
+    font-family: 'pixelify sans';
+    font-size: 3em;
+    color: var(--white-color);
+    text-shadow: 0 5px black;
+}
+
+.info .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.info-box {
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid var(--main-color);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.info-box img:hover {
+    border-color: var(--secondary-color);
+}
+
+.info-box h1 {
+    font-size: 2.5em;
+    color: var(--yellow-color);
+    text-shadow: 0 5px black;
 }
 
 /* MOBILE RESPONSIVENESS */
@@ -153,6 +208,10 @@ nav ul a {
 
     .hero .box {
         width: 70%;
+    }
+
+    .info-box img {
+        width: 300px;
     }
     
 }
