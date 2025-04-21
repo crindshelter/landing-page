@@ -22,6 +22,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 /* NAVIGATION BAR STYLE */
@@ -98,6 +99,10 @@ nav ul a {
     flex: 1.5;
 }
 
+.hero .text h1 {
+    margin-block: 0 15px;
+}
+
 .hero img {
     object-fit: cover;
     flex: 2;
@@ -112,10 +117,22 @@ nav ul a {
     background-color: #d1d1d190;
     font-weight: bold;
     font-size: 1.5em; 
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    transform: translateY(-10px);
 }
 
 .hero .box h1 {
     font-size: 3em;
+}
+
+/* INFO SECTION */
+
+.info {
+    min-height: 100vh;
 }
 
 /* MOBILE RESPONSIVENESS */
@@ -140,7 +157,3 @@ nav ul a {
     
 }
 
-@media (max-width: 850px) {
-    .hero img {
-    }
-}
