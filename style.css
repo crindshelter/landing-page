@@ -17,8 +17,6 @@
 
 .custom-font {
     font-family: 'pixelify sans';
-    font-size: 1.3em;
-
 }
 
 body {
@@ -308,6 +306,8 @@ footer h1 {
         width: 70%;
     }
 
+
+
     .info-box img {
         width: 300px;
     }
@@ -319,5 +319,39 @@ footer h1 {
     .quote h3 {
         font-size: 1.5em;
     }
+
+    .call-action {
+        padding: 50px;
+
+    }
+
+    .call-action .box {
+        gap: 15px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .call-action .box h1 {
+       font-size: 1em;
+       margin-bottom: 15px;
+    }
+    
+    .call-action .box p {
+        font-size: 0.7em;
+    }
+
+    footer {
+        padding: 50px;
+
+    }
 }
 
+@media (max-width: 800px) {
+    .hero .box {
+        width: 60%;
+    }
+
+    .hero .text h1 {
+        font-size: 3em;
+    }
+}
